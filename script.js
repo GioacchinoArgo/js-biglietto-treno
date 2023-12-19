@@ -34,13 +34,13 @@ console.log(message)
 
 // - 6
 if (userAge < 18) {
-    totalPrice = totalPrice - (totalPrice * 0.20);
+    totalPrice -= (totalPrice * 0.20);
     console.log(totalPrice)
     message = 'il prezzo del tuo tuo biglietto è: ' + '<strong>' + totalPrice.toFixed(2) + '</strong>' + '€';
     console.log(message)
 } else if (userAge > 65) {
     discountPrice = 0.40
-    totalPrice += - (totalPrice * 0.40);
+    totalPrice -= (totalPrice * 0.40);
     console.log(totalPrice)
     message = 'il prezzo del tuo tuo biglietto è: ' + '<strong>' + totalPrice.toFixed(2) + '</strong>' + '€';
     console.log(message)
